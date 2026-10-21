@@ -1,0 +1,36 @@
+@font-face{font-family:'KOswald';src:url(fonts/oswald-cyrillic.woff2) format('woff2');font-weight:400 700;font-style:normal;font-display:swap;unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'KOswald';src:url(fonts/oswald-latin.woff2) format('woff2');font-weight:400 700;font-style:normal;font-display:swap;unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+
+:root{--gr:#1F3A2C;--gr2:#27463A;--pa:#F5F2EA;--li:#EDE8DC;--kr:#F2C230;--ink:#151515;--cream:#F5F2EA;--brass:#FFD21E;--acc:#FFD21E;
+  --disp:'KOswald','MSans',system-ui,sans-serif;--red:#D2452E;--blue:#2D4FA0;--grn:#2E6B47;--lot-bg:#fff;--tag-bg:rgba(46,107,71,.12);--q-fg:#151515}
+html{--tile:#3E5A4B}
+.cap{font-weight:700;letter-spacing:.005em;text-transform:uppercase;line-height:.92}
+.cap.xxl{font-weight:700}
+.kick{display:inline-block;font:700 13px/1 var(--disp);text-transform:uppercase;letter-spacing:.06em;background:var(--acc);color:#151515;padding:5px 9px}
+.curtain .wm,.foot .wm,.logo span{font-family:var(--disp);font-weight:700;text-transform:lowercase;letter-spacing:.01em}
+.demo-strip{background:#151515;color:var(--acc)}
+.logo .lamp{width:28px;height:28px}
+.hero{position:relative;overflow:hidden}
+.hero::before,.hero::after{content:'';position:absolute;pointer-events:none;z-index:0}
+.hero::before{right:6vw;top:14%;width:22vw;max-width:300px;aspect-ratio:2/1;border-radius:999px 999px 0 0;background:var(--kr);opacity:.9}
+.hero::after{left:5vw;bottom:10%;width:16vw;max-width:220px;aspect-ratio:1;border-radius:50%;background:var(--red);opacity:.85}
+.hero>*{position:relative;z-index:1}
+.hero .award{color:var(--acc)}
+.hero .ghost{margin-left:10px;border-color:var(--acc);color:var(--acc)}
+.board .kick{background:var(--grn);color:#fff}
+.lot{border:2px solid #151515;border-radius:0}
+.lot .q{border-radius:0;background:var(--acc);font-size:17px}
+.lot:nth-child(3n+2) .q{background:var(--red);--q-fg:#fff}
+.lot:nth-child(3n) .q{background:var(--blue);--q-fg:#fff}
+.lot h3{text-transform:uppercase;font-size:20px}
+.ranges .card .pr{background:var(--acc);color:#151515;padding:2px 6px}
+.mtabs a{border-color:#151515}
+.mtabs a:hover{background:var(--acc);color:#151515}
+.mcat h2{display:inline-block;background:var(--acc);color:#151515;padding:4px 10px}
+.gives{background:var(--kr)}
+.gives .gv b{font-family:var(--disp);text-transform:uppercase;font-size:20px}
+.st.on{color:#2E6B47}
+.polka .tr{font-family:var(--disp);font-style:normal;font-weight:700;text-transform:uppercase}
+.polka .mq:nth-child(1) .tr{color:var(--grn)}.polka .mq:nth-child(2) .tr{color:var(--red)}.polka .mq:nth-child(3) .tr{color:var(--blue)}
+.it,.quote{font-family:var(--disp);font-style:normal;text-transform:uppercase;letter-spacing:.01em}
+@media(max-width:760px){.cap.xxl{font-size:15vw}.cap.l{font-size:12vw}.cap.m{font-size:8vw}.hero .ghost{margin:10px 0 0}}
